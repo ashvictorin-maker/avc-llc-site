@@ -1,0 +1,61 @@
+<form class="form"
+      name="consultation"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field">
+
+  <!-- Required for Netlify -->
+  <input type="hidden" name="form-name" value="consultation" />
+
+  <!-- Spam trap (hidden) -->
+  <p class="sr-only">
+    <label>Don’t fill this out: <input name="bot-field" /></label>
+  </p>
+
+  <div class="form-row">
+    <label>
+      Name
+      <input name="name" autocomplete="name" required />
+    </label>
+
+    <label>
+      Email
+      <input name="email" type="email" autocomplete="email" required />
+    </label>
+  </div>
+
+  <div class="form-row">
+    <label>
+      Business name
+      <input name="business" autocomplete="organization" />
+    </label>
+
+    <label>
+      Phone (optional)
+      <input name="phone" autocomplete="tel" />
+    </label>
+  </div>
+
+  <label>
+    What can we help with?
+    <textarea name="message" rows="5" placeholder="Monthly bookkeeping, catch-up, reconciliations, payroll support..."></textarea>
+  </label>
+
+  <div class="form-actions">
+    <button class="btn" type="submit">Send</button>
+    <p class="fineprint">
+      Prefer email? Write to <a href="mailto:AVCHOLDING1@GMAIL.COM">AVCHOLDING1@GMAIL.COM</a>
+      or call <a href="tel:+14752090960">475-209-0960</a>.
+    </p>
+  </div>
+</form>
+
+.sr-only{
+  position:absolute;
+  width:1px; height:1px;
+  padding:0; margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
